@@ -6,6 +6,9 @@
 }
 :root{
   --gold:#bd9e74;
+  --goldLighter:#bbab94;
+  --darkBleu :#02080d;
+  --lighterBleu:#062033;
 }
 body,
 html {
@@ -44,18 +47,10 @@ h6 {
   font-size: 25px;
   font-weight: 400;
 }
-
-.page__container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-}
-
 .custom-header-jewel {
   position: relative;
   height: 75px;
-  background: url(https://mejdikazdarlli.github.io/jewellery/jewel/pictures/bg-header-jewel.png) repeat-x;
+  background: url(../jewel/pictures/bg-header-jewel.png) repeat-x;
   background-size: auto 95px;
 }
 
@@ -89,6 +84,13 @@ h6 {
   font-size: 25px;
   font-weight: 400;
 }
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
@@ -131,13 +133,13 @@ h6 {
   color: white;
 }
 .left{
-  background-image: url("jewel/pictures/image-left.jpg");
+  background-image: url("jewel/pictures/atelier.jpg");
 }
 .center{
-  background-image: url("jewel/pictures/image-center.jpg");
+  background-image: url("jewel/pictures/MyFirstDiamons.jpeg");
 }
 .right{
-  background-image: url("jewel/pictures/image-right.jpg");
+  background-image: url("jewel/pictures/perrydelarosa.jpg");
 }
 .content-child div {
   width:100%;
@@ -150,4 +152,110 @@ h6 {
 }
 .content-child h1 {
   font-size: 2rem;
+}
+.logo-bg{
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  cursor: pointer;
+}
+#logo{
+  width:70px;
+  height: auto;
+}
+#logotext{
+  width: 120px;
+  height: auto;
+}
+
+
+
+/**************** perry ***********************/
+.header-vid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  margin: auto;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .header-vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .header-vid {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+#mouse-scroll {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  border-radius: 70px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#mouse-scroll .mouse {
+  background: rgb(2,8,13);
+  background: -moz-linear-gradient(180deg, rgba(2,8,13,1) 0%, rgba(9,45,71,1) 60%);
+  background: -webkit-linear-gradient(180deg, rgba(2,8,13,1) 0%, rgba(9,45,71,1) 60%);
+  background: linear-gradient(180deg, rgba(2,8,13,1) 0%, rgba(9,45,71,1) 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02080d",endColorstr="#092d47",GradientType=1);
+  height: 50px;
+  width: 32px;
+  border-radius: 20px;
+  transform: none;
+  top: 170px;
+}
+#mouse-scroll .mouse .mouse-in {
+  top: 8px;
+  height: 14px;
+  width: 2px;
+  border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+  background: #FFEDC3;
+  animation: animated-mouse 1.2s ease infinite;
+  position: relative;
+}
+.scroll-indication {
+  font-weight: 500 !important;
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+}
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.custizer{
+  width: 100%;
+  height: 400px;
+  background-color: red;
+  left: 0;
+  position: relative;
 }
