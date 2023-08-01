@@ -6,6 +6,9 @@
 }
 :root{
   --gold:#bd9e74;
+  --goldLighter:#bbab94;
+  --darkBleu :#02080d;
+  --lighterBleu:#062033;
 }
 body,
 html {
@@ -44,18 +47,10 @@ h6 {
   font-size: 25px;
   font-weight: 400;
 }
-
-.page__container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-}
-
 .custom-header-jewel {
   position: relative;
   height: 75px;
-  background: url(https://mejdikazdarlli.github.io/jewellery/jewel/pictures/bg-header-jewel.png) repeat-x;
+  background: url(../jewel/pictures/bg-header-jewel.png) repeat-x;
   background-size: auto 95px;
 }
 
@@ -89,6 +84,13 @@ h6 {
   font-size: 25px;
   font-weight: 400;
 }
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
@@ -131,13 +133,13 @@ h6 {
   color: white;
 }
 .left{
-  background-image: url("jewel/pictures/image-left.jpg");
+  background-image: url("jewel/pictures/atelier.jpg");
 }
 .center{
-  background-image: url("jewel/pictures/image-center.jpg");
+  background-image: url("jewel/pictures/MyFirstDiamons1.jpeg");
 }
 .right{
-  background-image: url("jewel/pictures/image-right.jpg");
+  background-image: url("jewel/pictures/perrydelarosa.jpg");
 }
 .content-child div {
   width:100%;
@@ -151,3 +153,24 @@ h6 {
 .content-child h1 {
   font-size: 2rem;
 }
+.logo-bg{
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  cursor: pointer;
+}
+#logo{
+  width:70px;
+  height: auto;
+}
+#logotext{
+  width: 120px;
+  height: auto;
+}
+
