@@ -47,43 +47,6 @@ h6 {
   font-size: 25px;
   font-weight: 400;
 }
-.custom-header-jewel {
-  position: relative;
-  height: 75px;
-  background: url(../jewel/pictures/bg-header-jewel.png) repeat-x;
-  background-size: auto 95px;
-}
-
-.custom-header-jewel .custom-logo-jewel {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.custom-header-jewel .custom-logo-jewel img {
-  vertical-align: middle;
-}
-
-.custom-header-jewel .custom-logo-jewel .custom-logo-desktop-bottom {
-  margin: 0 0 0 10px;
-}
-
-.custom-header-jewel .custom-nav-jewel {
-  padding: 23px 0 23px 0;
-  color: #fff;
-  text-align: center;
-  font-family: BebasNeue;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.custom-header-jewel .custom-nav-jewel a {
-  padding: 0 15px;
-  font-family: BebasNeue;
-  font-size: 25px;
-  font-weight: 400;
-}
 .page__container {
   display: flex;
   flex-direction: column;

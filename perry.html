@@ -8,41 +8,86 @@
   <title>Home - Jewel</title>
   <meta name="description" content="">
   <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="main-jewel">
   <div class="page__container">
-    <header class="custom-header-jewel">
-      <p class="custom-logo-jewel">
-        <a class="custom-logo-desktop" href="home" title="De la rosa café">
-          <img class="custom-logo-desktop-top" src="jewel/pictures/logo-jewel-top.png" alt="De la rosa café">
-          <img class="custom-logo-desktop-bottom" src="jewel/pictures/logo-jewel-bottom.png" alt="De la rosa café">
-        </a>
-      </p>
-      <nav class="custom-nav-jewel">
-        <a href="home" title="">Accueil</a>
-        <a href="concept" title="">Concept</a>
-        <a href="collections" title="">Collections</a>
-        <a href="quisommesnous" title="">Qui sommes-nous</a>
-        <a href="events" title="">Events</a>
-      </nav>
-    </header>
-    <div>
-        <video id="homevideo" autoplay loop muted plays-inline poster="images/header-img.webp" class="header-vid">
-          <source src="images/header-vid-2.webm" type="video/mp4">
-        </video>
-        <div id="mouse-scroll">
-            <div class="mouse">
-              <div class="mouse-in"></div>
-            </div>
-            <div class="scroll-indication">Scroll</div>
+      <header class="custom-header-jewel">
+        <p class="custom-logo-jewel">
+          <a class="custom-logo-desktop" href="home" title="De la rosa café">
+            <img class="custom-logo-desktop-top" src="jewel/pictures/logo-jewel-top.png" alt="De la rosa café">
+            <img class="custom-logo-desktop-bottom" src="jewel/pictures/logo-jewel-bottom.png" alt="De la rosa café">
+          </a>
+        </p>
+        <nav class="custom-nav-jewel">
+          <a href="home" title="">Accueil</a>
+          <a href="concept" title="">Concept</a>
+          <a href="collections" title="">Collections</a>
+          <a href="quisommesnous" title="">Qui sommes-nous</a>
+          <a href="events" title="">Events</a>
+        </nav>
+      </header>
+      <div style="position: relative;">
+      <video id="homevideo" autoplay loop muted plays-inline poster="images/header-img.webp" class="header-vid">
+        <source src="images/MyFirstDiamond.webm" type="video/mp4">
+      </video>
+      <div id="mouse-scroll">
+          <div class="mouse">
+            <div class="mouse-in"></div>
           </div>
+          <div class="scroll-indication">Scroll</div>
       </div>
     </div>
-    <div class="custizer">
-        <h1>creez votre bijou personalisé</h1>
+    </div>
+    <div class="custom">
+      <div class="customLeft">
+        <h1 class="customTitre" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="1500">creez votre bijou personalisé</h1>
+        <h2 data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="1000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet odit vel voluptatibus reiciendis repellat sapiente minima ducimus voluptates. Iste consectetur ut quibusdam quo repellendus autem culpa sed voluptates eius!</h2>
+        <button onclick="window.location.href='https://delarosacafe.com/jewel/frappe/index.html'" data-aos="fade-right"  data-aos-easing="ease-in-sine" data-aos-duration="1000">Start your Journey</button>
+      </div>
+      <div class="customRight">
+        <img data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="1000" src="images/configurator.JPG" alt="">
+      </div>
+    </div>
+    <div class="carosel">
+      <div class="item">
+        <h1>title</h1>
+        <button>Découvrir</button>
+      </div>
+      <div class="item">
+        <h1>title</h1>
+        <button>Découvrir</button>
+      </div>
+      <div class="item">
+        <h1>title</h1>
+        <button>Découvrir</button>
+      </div>
+      <div class="item">
+        <h1>title</h1>
+        <button>Découvrir</button>
+      </div>
+    </div>
+    <div class="createur">
+      <div class="createurLeft">
+        <img src="images/Pierre2.webp" alt="">
+        
+      </div>
+      <div class="createurRight">
+        <h1 class="title">Perry Salou - <span>LE CRÉATEUR</span></h1>
+        <h1>Depuis 1991, Perry Salou, Créateur et Directeur Artistique de la Maison Perry De La Rosa,<br> n’a de cesse de sublimer la Femme.</h1>
+        <h2>C’est dans la tendance Seventies et le style Rock’N’Roll que l’artisan puise ses inspirations. Véritable passionné, il retranscrit l’esprit de liberté de ces époques dans ses créations.
+
+          Admiratif de l’Art Sacré ainsi que de l’Art de la Renaissance, Perry a su remettre au goût du jour la richesse artistique française de ces époques à travers ses collections.
+          
+          Casser les codes de la joaillerie de luxe, ici est le challenge que le créateur à su relever en travaillant avec délicatesse et élégance ses pierres et métaux précieux.
+          
+          Le tout influencé par une touche « Glam’Rock », qui a marqué ses années passées sur le continent Américain.</h2>
+      </div>
     </div>
     <script type="module" src="js/index.js" ></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  </body>
 
 </html>
