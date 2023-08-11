@@ -449,8 +449,9 @@ border-radius: 20px;
 /******************** FOOTER **************************/
 .footer-main{
   position: relative;
-  top: -20px;
+  top: 20px;
   padding-top: 10px;
+  border-top: dotted 1px white;
 }
 .footer-main .container{
   display: flex;
@@ -506,7 +507,7 @@ border-radius: 20px;
   color: var(--gold);
 }
 .section_social{ margin: 0% !important;}
-/* 
+
 .carosel{
   width: 100%;
   height: fit-content;
@@ -514,7 +515,6 @@ border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -100px;
   margin-top: 0.5rem;
 }
 
@@ -576,7 +576,7 @@ border-radius: 20px;
   transition: all 0.5s;
   font-weight: 900;
   letter-spacing: 0.2rem;
-  bottom: -13%;
+  bottom: -20%;
   background-color: var(--lighterBleu);
   color: white;
   filter:none;
@@ -592,6 +592,7 @@ border-radius: 20px;
   bottom: 6%;
   font-size: 25px;
 } 
+/*
 .createur{
   position: relative;
   display: flex;
