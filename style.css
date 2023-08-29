@@ -80,21 +80,22 @@ h6 {
   position: fixed;
   height: 75px;
   width: 100vw;
-  background: -moz-linear-gradient(-180deg, rgba(2, 8, 13, 1) 0%, rgba(9, 45, 71, 1) 90%);
+  /* background: -moz-linear-gradient(-180deg, rgba(2, 8, 13, 1) 0%, rgba(9, 45, 71, 1) 90%);
   background: -webkit-linear-gradient(-180deg, rgba(2, 8, 13, 1) 0%, rgba(9, 45, 71, 1) 90%);
-  background: linear-gradient(-180deg, rgba(2, 8, 13, 1) 0%, rgba(9, 45, 71, 1) 90%);
-  border-bottom: 1px solid var(--gold);
+  background: linear-gradient(-180deg, rgba(2, 8, 13, 1) 0%, rgba(9, 45, 71, 1) 90%); */
+  /* border-bottom: 1px solid var(--gold); */
   z-index: 4;
   transition: border-bottom 2s ease, background-color 2s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* padding-top: 2.0rem; */
 }
 
 
 .custom-header-jewel .custom-nav-jewel {
   /* padding-top: 20px; */
-  color: #fff;
+  color:white;
   text-align: center;
   font-family: BebasNeue !important;
   font-size: 30px;
@@ -103,7 +104,7 @@ h6 {
   position: relative;
   text-transform: uppercase;
   width: fit-content;
-  padding-right: 30vw;
+  padding-right: 35vw;
 }
 
 .custom-header-jewel .custom-nav-jewel a {
@@ -252,7 +253,32 @@ header svg {
     margin: 0 auto;
     position: relative;
 }
-.mySlides.active {
+.slide {
+  position: absolute;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.slide1{
+  background-image: url(images/PERRY-photo-2563129.webp);
+}
+.slide2{
+  background-image: url(images/PERRY-photo-2563130.webp);
+}
+.slide3{
+  background-image: url(images/PERRY-photo-2563131.webp);
+}
+.slide4{
+  background-image: url(images/PERRY-photo-2563132.webp);
+}
+.slide5{
+  background-image: url(images/PERRY-photo-2563129.webp);
+}
+.slide.active {
   opacity: 1;
   transform: translateX(0);
 }
@@ -260,35 +286,24 @@ header svg {
 .slide-out {
   transform: translateX(-100%);
   opacity: 0;
+  transition: all 0.5s;
 }
-.mySlides img {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: relative;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0 auto;
-    display: flex;
-}
+
 
 .theme {
   display: flex;
   width: 100%;
-  height: 330px;
+  height: 460px;
   background-position: center;
   background-size: cover;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 4%;
   padding-top: 2%;
   color: white;
   font-family: BebasNeue !important;
+  z-index: 1;
 }
 .theme h1 {
   position: relative;
