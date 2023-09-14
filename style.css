@@ -347,37 +347,37 @@ header svg {
   color: white;
 }
 .band0{
-  background-image: url(images/custom.jpg);
+  background-image: url(images/custom.webp);
   background-position: 0% 40%;
 }
 .band0 h2{
- width: 29%;
+ width: 100%;
 }
 .band1{
-  background-image: url(images/certissagetourmaline.jpg);
+  background-image: url(images/certissagetourmaline.webp);
   color: black;
   background-position: bottom;
 }
 .band1 h2{
-  width: 28%;
+  width: 100%;
  }
 .band2{
-  background-image: url(images/RENSEIGNEMENT.jpg);
+  background-image: url(images/RENSEIGNEMENT.webp);
   color: white;
   background-position: bottom;
 }
 .band2 h2{
-  width: 28%;
+  width: 100%;
  }
 .band3{
-  background-image: url(images/polissage.jpg);
+  background-image: url(images/polissage.webp);
   color: white;
 }
 .band3 h2{
-  width: 28%;
+  width: 70%;
  }
 .band4{
-  background-image: url(images/bijouxAtelier.jpg);
+  background-image: url(images/bijouxAtelier.webp);
   color: white;
   align-items: flex-end;
   padding-right: 4%;
@@ -385,7 +385,10 @@ header svg {
   justify-content: center;
 }
 .band4 h2{
-  width: 28%;
+  width: 70%;
+ }
+ .band4 button{
+  margin-right: 13rem;
  }
 /******************** OUR TEAM **************************/
 .ourTeam {
@@ -760,6 +763,9 @@ header svg {
     padding: 0.5rem 2rem;
     font-size: 20px;
   }
+  .band4 button{
+    margin-right: 0rem;
+   }
   .carosel{flex-wrap: wrap;padding: 0.25rem;}
   .carosel .item {width: 40vw;height: 25vh; margin: 0.15rem;justify-content: center}
   .carosel .item button{width: 100%;text-align: center;padding: 0.5rem 0rem;border-radius: 0px;font-size: 20px;}
