@@ -137,3 +137,19 @@ h6 {
   height: auto;
 }
 
+@media only screen and (max-width: 900px) {
+  .logo-bg #logo{
+    width: 50px;
+  }
+  .logo-bg #logotext{
+    width: 90px;
+      }
+  .content-body{
+    flex-direction: column;
+  }
+  .content-child h1 {
+    font-size: 1rem;
+}
+.content-child div{padding: 5px;}
+.content-child{padding-right: 10%;}
+}

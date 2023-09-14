@@ -656,3 +656,109 @@ header svg {
   width: auto;
   height: 500px;
 }*/
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+  width: fit-content;
+  margin: 0.3rem;
+  right: 0rem;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 11;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  background-color: var(--gold);
+  margin: 3px 0;
+  border-radius: 0.5rem;
+  border: 0.05rem solid black;
+}
+
+/* Styles for the navigation menu */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(36, 36, 36);
+  position: absolute;
+  top: 0px;
+  right: -250px;
+  width: 100vw;
+  transition: right 0.5s ease;
+  position: fixed;
+  z-index: 10;
+}
+
+.menu.open {
+  right: 0;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 950px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        right: -100vw;
+        display: flex;
+    }
+  .display-btn{
+    height: 10rem;
+    width: 2rem;
+  }
+  .display-right{
+    left: calc(100% - 4.2rem);
+  }
+  body{overflow-x: clip;}
+  .custom-header-jewel{display: none;}
+  #mouse-scroll{top:85vh}
+  .theme{align-items: center;justify-content: center;padding: 2% 2% 2% 2%;height: 400px;}
+  .theme h1{font-weight: 900;font-size: .9rem;text-align: center;letter-spacing: 0.05rem;}
+  .theme h2{width: 100%;font-size: 1rem;text-align: center;}
+  .band0{background-position: 50% 40%;}
+  .theme .textbg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    color: black;
+    padding: 0.1rem 0.3rem;
+  }
+  .band4{color: black;}
+  .theme button {
+    padding: 0.5rem 2rem;
+    font-size: 20px;
+  }
+  .carosel{flex-wrap: wrap;padding: 0.25rem;}
+  .carosel .item {width: 40vw;height: 25vh; margin: 0.15rem;justify-content: center}
+  .carosel .item button{width: 100%;text-align: center;padding: 0.5rem 0rem;border-radius: 0px;font-size: 20px;}
+  .carosel .item h1{font-size: 20px;letter-spacing: 0.15rem;}
+  .address-box {display: flex;    align-items: flex-start;
+    justify-content: flex-start;}
+  .address-box .add-icon {width: fit-content;
+    height: fit-content;
+    line-height: inherit;
+    padding: 10px;}
+  .add-content{padding-left: 0px;display: flex;align-items: flex-start;
+    flex-direction: column;}
+}
