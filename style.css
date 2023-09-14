@@ -670,13 +670,14 @@ header svg {
   z-index: 11;
 }
 
-.bar {
+.bar1,.bar2,.bar3 {
   width: 50px;
   height: 10px;
   background-color: var(--gold);
   margin: 3px 0;
   border-radius: 0.5rem;
   border: 0.05rem solid black;
+  transition: all 0.5s ease;
 }
 
 /* Styles for the navigation menu */
@@ -713,6 +714,15 @@ header svg {
 }
 
 @media only screen and (max-width: 950px) {
+  .openbarTop{
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  .openbarBottom{
+    transform: rotate(-45deg) translate(13px, -13px);
+  }
+  .openbarMidlle{
+    opacity: 0;
+  }
     .menu-toggle {
         display: flex;
     }
@@ -722,15 +732,16 @@ header svg {
         display: flex;
     }
   .display-btn{
-    height: 10rem;
+    height: 5rem;
     width: 2rem;
+    background-color: rgba(0, 0, 0,0.5) !important;
   }
   .display-right{
     left: calc(100% - 4.2rem);
   }
   body{overflow-x: clip;}
   .custom-header-jewel{display: none;}
-  #mouse-scroll{top:85vh}
+  #mouse-scroll{display: none;}
   .theme{align-items: center;justify-content: center;padding: 2% 2% 2% 2%;height: 400px;}
   .theme h1{font-weight: 900;font-size: .9rem;text-align: center;letter-spacing: 0.05rem;}
   .theme h2{width: 100%;font-size: 1rem;text-align: center;}

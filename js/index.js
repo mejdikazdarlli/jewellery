@@ -29,8 +29,14 @@ function showDivs(n) {
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu");
+  const bar1 = document.querySelector(".bar1");
+  const bar2 = document.querySelector(".bar2");
+  const bar3 = document.querySelector(".bar3");
 
   menuToggle.addEventListener("click", function () {
     menu.classList.toggle("open");
+    bar1.classList.toggle("openbarTop");
+    bar2.classList.toggle("openbarMidlle");
+    bar3.classList.toggle("openbarBottom");
   });
 });
